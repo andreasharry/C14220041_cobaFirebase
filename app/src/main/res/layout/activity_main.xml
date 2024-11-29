@@ -9,38 +9,34 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/etProvinsi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukan Nama Provinsi"
-        android:id="@+id/etProvinsi">
-
-    </EditText>
+        android:hint="Masukkan Nama Provinsi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/etIbutkota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukan Ibukota Provinsi"
-        android:id="@+id/etIbukota">
-
-    </EditText>
+        android:hint="Masukkan Nama Ibu Kota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProvinsi" />
 
     <Button
+        android:id="@+id/btnSimpan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simpan Data"
-        android:id="@+id/btSimpan">
-
-    </Button>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etIbutkota" />
 
     <ListView
+        android:id="@+id/lvData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lvData">
-
-    </ListView>
-
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSimpan" />
 
 </LinearLayout>
